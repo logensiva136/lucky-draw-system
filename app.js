@@ -8,7 +8,7 @@ const app = express();
 import homeController from "./controller/home.js";
 
 app.set("view engine", "ejs");
-app.use(express.static(path.__dirname + "public"));
+app.use(express.static("public"));
 
 app.get("/", homeController);
 
